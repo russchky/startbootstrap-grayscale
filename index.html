@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -38,9 +38,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
-            <li class="nav-item">
+          <!--  <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
@@ -55,9 +55,23 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Grayscale</h1>
-              <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                <br>Created by Start Bootstrap.</p>
+              <h1 class="brand-heading">KARMA.GG</h1>
+              <p class="intro-text">Are your teamates holding you back? <br> Search your name below to find out!</p>
+			  <form id="search-form">
+    <div class="search">
+
+
+<div class="whiteBox">
+    <input placeholder="Summoner Name..." id="num-ones" onSubmit="return false"> 
+	    <select id="region">
+  		<option value="0">NA</option>
+  		<option value= "1">EUW</option>
+</select>
+</div>
+<form onsubmit="return false">
+ 	<button id="botn" type="button" onclick="add()">Search</button>
+</form>
+</form><br><br>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -65,27 +79,25 @@
           </div>
         </div>
       </div>
+	  
     </header>
-
+<div class="all-sections">
     <!-- About Section -->
     <section id="about" class="content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About Grayscale</h2>
-            <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-            <p>This theme features stock photos by
-              <a href="http://gratisography.com/">Gratisography</a>
-              along with a custom Google Maps skin courtesy of
-              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+            <h2>What is Karma.gg?</h2>
+            <p>All to often we blame loses on our teamates poor performance in our games.  It feels like no matter the game, the enemy summoners simply outclasses your own.
+			This is a frustration that is felt at all ranks and by most all players.  Karma.gg allows you to look back on your collective past teamates and enemies to see how they have been faring without you on their squad.  
+			By searching your name above we'll crunch the numbers and determine whether your teamates have truely been holding you back or if they have left you in the dust </p>
+
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Download Section -->
+<!--
+    
     <section id="download" class="download-section content-section text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
@@ -95,51 +107,62 @@
         </div>
       </div>
     </section>
-
+-->
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
-            <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-              on Start Bootstrap to give some feedback about this theme!</p>
+            <h2>Contact Us</h2>
+            <p>Feedback is something very important to us.  Whether you love the site or hate it, we'd love to hear why!  Feel free to cotact us about anything.</p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                <a href="https://twitter.com/LolKarmaGG" class="btn btn-default btn-lg">
                   <i class="fa fa-twitter fa-fw"></i>
                   <span class="network-name">Twitter</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                <a href="https://discord.gg/WHcXQB" class="btn btn-default btn-lg">
                   <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
+                  <span class="network-name">Discord</span>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
                   <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
+                  <span class="network-name">Email</span>
                 </a>
               </li>
             </ul>
+			<div class="disclaimer">
+			<p>  Karma.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends.
+			League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
           </div>
+		  </div>
         </div>
       </div>
     </section>
-
-    <!-- Map Section -->
+</div>
+<!-- <div class="bottom-all">
+    
     <div id="map"></div>
 
-    <!-- Footer -->
+    
     <footer>
       <div class="container text-center">
         <p>Copyright &copy; Your Website 2018</p>
       </div>
     </footer>
+</div> -->
+<script>
+document.getElementById("myInput").addEventListener("search", myFunction);
 
+function myFunction() {
+    var x = document.getElementById("myInput");
+    document.getElementById("demo").innerHTML = "You are searching for: " + x.value;
+}
+</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -148,10 +171,11 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+	<script src="search.js"></script>
 
   </body>
 
